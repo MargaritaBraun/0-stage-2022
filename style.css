@@ -1,0 +1,354 @@
+@font-face {
+    font-family: Inika;
+     src: url("Inika/Inika-Regular.ttf");
+     font-family: Inter;
+     src: url("Inter/static/Inter-Regular.ttf");
+   }
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 99vw;
+    height: 100vw;
+    background-color: #EDF2EC;
+}
+
+.menu {
+    background-color: #EDF2EC;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    display: flex;
+    align-items: baseline;
+    font-size: 16px;
+}
+
+.logo {
+    margin-left: 111px;
+    flex-grow: 1;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    padding:  0px 30px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 532px;
+    background-color: #EDF2EC;
+    margin: 13px 30px;
+}
+
+.welcome-img {
+    display: block;
+}
+
+.leaf1 {
+    position: relative;
+    background-image: url(img/leaf1.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100% 100%;
+    width: 94px;
+    height: 77px;
+    top: 152px;
+    left: 94px;
+    transform: rotate(355deg);
+}
+
+.leaf2 {
+    position: relative;
+    background-image: url(img/leaf2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 246px;
+    height: 180px;
+    top: 0px;
+    left: -130px;
+}
+
+.leaf3 {
+    position: relative;
+    background-image: url(img/leaf3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 215px;
+    height: 180px;
+    top: 10px;
+    left: -113px;
+    transform: rotate(346deg);
+}
+
+.leaf4 {
+    position: relative;
+    background-image: url(img/leaf4.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 85px;
+    top: -200px;
+    left: -140px;
+    transform: rotate(355deg);
+}
+
+.leaf5 {
+    position: relative;
+    background-image: url(img/leaf5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 114px;
+    height: 94px;
+    top: -265px;
+    left: 92px;
+    transform: rotate(346deg);
+}
+
+.wel-parag {
+    width: 549px;
+    height: 340px;
+    margin: 31px 10px;
+}
+
+H1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+}
+
+h1 bolt {
+    color: #499A18;
+}
+
+.wel-paragtext {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    width: 525px;
+}
+
+.buttonPla {
+    border: 3px solid orange;
+    border-radius: 15px;
+    width: 158px;
+    height: 44px;
+}
+
+.about {
+    height: 500px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutText {
+    margin: 76px 60px 40px 144px;
+    width: 605px;
+    height: 205px;
+}
+
+h2 {
+    font-weight: 400;
+    color: #499A18;
+    font-size: 40px;
+    line-height: 52px;
+    width: 400px;
+}
+
+h2 span {
+    color: #E06733;
+}
+
+.aboutText-2 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.houseplant1 {
+    background: url(img/houseplant1.png) 100% 100% no-repeat;
+    background-size: cover;
+    height: 367px;
+    width: 345px;
+    margin: 83px 43px 10px 10px;
+}
+
+.service {
+    margin: 20px 50px 20px 50px;
+}
+
+.serviceHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.gallery {
+    display: flex;
+    width: 1222px;
+    height: 955px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 20px 50px;
+}
+
+.galleryFoto1 {
+    background: url(img/service1.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.galleryText {
+    width: 329px;
+    height: 100px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 350px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    color: #717171;
+}
+
+.galleryTextBolt {
+    font-family: Inter;
+    font-size: 20px;
+    color: #E06733;
+    font-weight: bold;
+}
+
+.galleryFoto2 {
+    background: url(img/service2.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.galleryFoto3 {
+    background: url(img/service3.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.galleryFoto4 {
+    background: url(img/service4.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.galleryFoto5 {
+    background: url(img/service5.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.galleryFoto6 {
+    background: url(img/service6.png)no-repeat;
+    width: 329px;
+    height: 350px;
+}
+
+.prices {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricesAbout {
+    margin: 70px 50px 20px 120px;
+
+}
+
+.pricesAbout h2 {
+    color: black;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 120px;
+
+}
+
+.pricesMenu {
+    margin: 100px 50px 130px 109px;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pricesButton {
+    background-color: #EDF2EC;
+    width: 200px;
+    height: 50px;
+    color: black;
+    border-radius: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.pricesBlock {
+    margin: 70px 20px 20px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pricesBlockText {
+    color: black;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+}
+
+.pricesBlockText span {
+    color: #499A18;
+}
+
+.pricesBlockleaves {
+    width: 300px;
+    height: 500px;
+}
+
+.pricesBlockleaves1 {
+    background: url(img/leaf2.png)no-repeat;
+    background-size: auto;
+    width: 30px;
+    height: 40px;
+}
