@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" type="image/png" href="img/logo_vector.svg">
+    <link rel="icon" type="image/png" href="img/logo.png">
     <script src="script.js"></script>
     <title>Plants</title>
 </head>
 <body>
 <header class="menu">
     <div class="logo">
-    <p><img src="img/logo.png">Plants</p>
+    <p><img src="img/logo_vector.svg">Plants</p>
     </div>
 <nav>
     <ul class="nav-list">
@@ -24,6 +25,7 @@
     </ul>
 </nav>
 </header>
+<main class="main">
 <section class="welcome">
     <div class="welcome-img">
     <div class="leaf1"></div>
@@ -33,7 +35,7 @@
     <div class="leaf5"></div>
     </div>
     <div class="wel-parag">
-        <h1>We grow <bolt>plants</bolt> and give you oxygen</h1>
+        <h1 id="home">We grow <bolt>plants</bolt> and give you oxygen</h1>
         <p class="wel-paragtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         <button class="buttonPla">LEARN MORE</button>
@@ -41,7 +43,7 @@
 </section>
 <section class="about">
     <div class="aboutText">
-        <h2>We are <span>professional experienced</span> gardeners</h2>
+        <h2 id="about">We are <span>professional experienced</span> gardeners</h2>
         <p class="aboutText-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
         but also the leap into electronic typesetting, remaining essentially unchanged. </p>
@@ -49,10 +51,11 @@
     <div class="houseplant1"></div>
 </section>
 <section class="service">
-    <div class="serviceHead"><h2>Service and our projects</h2>
-    <button class="buttonPla">Gardens</button>
-    <button class="buttonPla">Law</button>
-    <button class="buttonPla">Planting</button></div>
+    <div class="serviceHead">
+        <h2 id="service" class="serviceHeadText">Service and our projects</h2>
+    <button class="servicebtn">Gardens</button>
+    <button class="servicebtn">Law</button>
+    <button class="servicebtn">Planting</button></div>
     <div class="gallery">
         <div class="galleryFoto1">
             <div class="galleryText">
@@ -88,7 +91,7 @@
 </section>
 <section class="prices">
     <div class="pricesAbout">
-        <h2>Prices</h2>
+        <h2 id="prices">Prices</h2>
         <div class="pricesMenu">
         <button class="pricesButton"><img src="img/accordion_btn.svg" alt="Basics">Basics</button>
         <button class="pricesButton"><img src="img/accordion_btn.svg" alt="Standard">Standard</button>
@@ -97,11 +100,36 @@
     </div>
     <div class="pricesBlock">
         <h2 class="pricesBlockText">Our best <span>gardeners</span> are ready to help you</h2>
-        <button class="buttonPla">Contact us</button>
+        <button class="pricesbtn">Contact us</button>
         <div class="pricesBlockleaves">
-            <div class="pricesBlockleaves1"></div>
+            <div class="pricesBlockleaves"><img src="img/leafs.png" alt="leafs"></div>
         </div>
     </div>
 </section>
+<section class="contacts">
+    <h2 id="contacts">Contact us</h2>
+    <div class="contactContainer">
+        <div class="contact_woman">
+        <img src="img/contact_woman.png" alt="woman"></div>
+        <button class="contactsbutton"><span>City</span><img src="img/accordion_btn.svg"></button>
+    </div>
+</section>
+<footer class="footer">
+<div class="footerdata">
+    <p>©</p>
+    <p>2022</p>
+    <p><a class="gitMy" href="https://github.com/MargaritaBraun">github</a></p>
+</div>
+<p class="rs">Rolling Scopes School</p>
+<div class="social-list">
+    <ul class="social-item">
+        <li class="item-li"><img src="img/inst.svg" alt="inst"></li>
+        <li class="item-li"><img src="img/fb.svg" alt="fb"></li>
+        <li class="item-li"><img src="img/tv.svg" alt="tv"></li>
+        <li class="item-li"><img src="img/pinterest.svg" alt="pinterest"></li>
+    </ul>
+</div>
+</footer>
+</main>
 </body>
 </html>

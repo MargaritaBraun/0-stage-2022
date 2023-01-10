@@ -7,55 +7,69 @@
 
 body {
     margin: 0 auto;
-    padding: 0;
-    width: 99vw;
-    height: 100vw;
+    width: 1440px;
     background-color: #EDF2EC;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 1440px;
+    background: #EDF2EC;
+    margin: 0 auto;
 }
 
 .menu {
     background-color: #EDF2EC;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    height: 134px;
+    width: 1440px;
     display: flex;
-    align-items: baseline;
-    font-size: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    margin-left: 111px;
+    display: flex;
     flex-grow: 1;
+    margin-left: 132px;
+    font-size: 16px;
 }
-
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
-    padding: 0;
+    padding-right: 130px;
 }
 
 .nav-item {
     list-style: none;
-    padding:  0px 30px;
+    padding:  0px 20px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: black;
+    font-size: 16px;
+    font-weight: 700;
 }
 
+li:first-child a {
+    color: #E06733;
+  }
 
 .welcome {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
+    width: 1440px;
     height: 532px;
     background-color: #EDF2EC;
-    margin: 13px 30px;
+    padding: 0 109px 0px 109px;
+    box-sizing: border-box;
 }
 
 .welcome-img {
     display: block;
+    padding-top: 30px;
 }
 
 .leaf1 {
@@ -66,8 +80,8 @@ body {
     background-size: 100% 100%;
     width: 94px;
     height: 77px;
-    top: 152px;
-    left: 94px;
+    top: 100px;
+    left: 158px;
     transform: rotate(355deg);
 }
 
@@ -79,8 +93,8 @@ body {
     background-size: 100% 100%;
     width: 246px;
     height: 180px;
-    top: 0px;
-    left: -130px;
+    top: -57px;
+    left: -67px;
 }
 
 .leaf3 {
@@ -91,8 +105,8 @@ body {
     background-size: 100% 100%;
     width: 215px;
     height: 180px;
-    top: 10px;
-    left: -113px;
+    top: -70px;
+    left: -38px;
     transform: rotate(346deg);
 }
 
@@ -104,8 +118,8 @@ body {
     background-size: 100% 100%;
     width: 100px;
     height: 85px;
-    top: -200px;
-    left: -140px;
+    top: -254px;
+    left: -104px;
     transform: rotate(355deg);
 }
 
@@ -117,15 +131,15 @@ body {
     background-size: 100% 100%;
     width: 114px;
     height: 94px;
-    top: -265px;
-    left: 92px;
+    top: -321px;
+    left: 168px;
     transform: rotate(346deg);
 }
 
 .wel-parag {
     width: 549px;
     height: 340px;
-    margin: 31px 10px;
+    padding-top: 30px;
 }
 
 H1 {
@@ -152,21 +166,22 @@ h1 bolt {
 }
 
 .buttonPla {
-    border: 3px solid orange;
+    border: 2px solid orange;
     border-radius: 15px;
     width: 158px;
     height: 44px;
 }
 
 .about {
-    height: 500px;
+    height: 666px;
     background: white;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 
 .aboutText {
-    margin: 76px 60px 40px 144px;
+    padding: 93px 0px 0px 119px;
     width: 605px;
     height: 205px;
 }
@@ -190,23 +205,40 @@ h2 span {
 }
 
 .houseplant1 {
-    background: url(img/houseplant1.png) 100% 100% no-repeat;
-    background-size: cover;
-    height: 367px;
-    width: 345px;
-    margin: 83px 43px 10px 10px;
+    background: url(img/houseplant1.png) no-repeat;
+    height: 479px;
+    width: 464px;
+    margin-top: 93px;
+    margin-right: 109px;
 }
 
 .service {
-    margin: 20px 50px 20px 50px;
+    padding: 40px 50px 20px 109px;
 }
 
 .serviceHead {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 200px 10px 10px;
 }
+
+.serviceHeadText {
+    width: 306px;
+    height: 94px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52.12px;
+}
+
+.servicebtn {
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+    color: #E06733;
+}
+
 
 .gallery {
     display: flex;
@@ -215,7 +247,6 @@ h2 span {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 50px 20px 50px;
 }
 
 .galleryFoto1 {
@@ -273,15 +304,16 @@ h2 span {
 }
 
 .prices {
-    color: white;
+    background: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 60px;
+    padding: 40px 50px 20px 109px;
 }
 
 .pricesAbout {
-    margin: 70px 50px 20px 120px;
-
+    width: 200px;
 }
 
 .pricesAbout h2 {
@@ -289,12 +321,10 @@ h2 span {
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
-    padding-left: 120px;
-
 }
 
 .pricesMenu {
-    margin: 100px 50px 130px 109px;
+    margin-top: 100px;
     width: 250px;
     height: 300px;
     border: 1px solid #E3E1D5;
@@ -311,6 +341,7 @@ h2 span {
     height: 50px;
     color: black;
     border-radius: 20px;
+    border: 0;
     font-family: Inter;
     font-size: 20px;
     font-weight: bold;
@@ -322,10 +353,10 @@ h2 span {
 }
 
 .pricesBlock {
-    margin: 70px 20px 20px 250px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
 }
 
 .pricesBlockText {
@@ -341,14 +372,98 @@ h2 span {
     color: #499A18;
 }
 
-.pricesBlockleaves {
-    width: 300px;
-    height: 500px;
+.pricesbtn {
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+    color: #E06733;
+    background-color: white;
+    font-weight: bold;
 }
 
-.pricesBlockleaves1 {
-    background: url(img/leaf2.png)no-repeat;
-    background-size: auto;
-    width: 30px;
-    height: 40px;
+.pricesBlockleaves {
+    width: 152px;
+    height: 175px;
+}
+
+.contacts h2 {
+    margin: 0 auto;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.contactContainer {
+    width: 1440px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_woman {
+    padding-left: 109px;
+}
+
+.contactsbutton {
+    width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0px;
+    margin: 148px 109px 0px 0px;
+}
+
+.footer {
+    width: 1440px;
+    height: 130px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerdata {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.gitMy {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.rs {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.social-list {
+    display: flex;
+    width: 188px;
+    justify-content: flex-end;
+}
+
+.social-item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.item-li {
+    padding: 10px;
 }
