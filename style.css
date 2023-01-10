@@ -151,8 +151,11 @@ H1 {
     color: #717171;
 }
 
-h1 bolt {
+h1 span {
     color: #499A18;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
 }
 
 .wel-paragtext {
@@ -170,6 +173,14 @@ h1 bolt {
     border-radius: 15px;
     width: 158px;
     height: 44px;
+    cursor: pointer;
+}
+
+.buttonPla:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.6s;
+    transform: scale(1);
 }
 
 .about {
@@ -237,8 +248,15 @@ h2 span {
     width: 161px;
     height: 50px;
     color: #E06733;
+    cursor: pointer;
 }
 
+.servicebtn:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.6s;
+    transform: scale(1);
+}
 
 .gallery {
     display: flex;
@@ -309,7 +327,8 @@ h2 span {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 60px;
-    padding: 40px 50px 20px 109px;
+    padding: 50px 50px 20px 109px;
+    height: 550px;
 }
 
 .pricesAbout {
@@ -356,7 +375,8 @@ h2 span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 450px;
 }
 
 .pricesBlockText {
@@ -373,6 +393,7 @@ h2 span {
 }
 
 .pricesbtn {
+    margin-top: -10;
     border: 1px solid orange;
     border-radius: 5px;
     width: 161px;
@@ -380,6 +401,14 @@ h2 span {
     color: #E06733;
     background-color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.pricesbtn:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.6s;
+    transform: scale(1);
 }
 
 .pricesBlockleaves {
@@ -449,6 +478,9 @@ h2 span {
     font-weight: 400;
     font-size: 20px;
     line-height: 50px;
+    text-decoration: none;
+    color: black;
+    background-color: white
 }
 
 .social-list {
