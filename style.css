@@ -1,65 +1,74 @@
 @font-face {
     font-family: Inika;
      src: url("Inika/Inika-Regular.ttf");
-     font-family: Inter;
-     src: url("Inter/static/Inter-Regular.ttf");
+     font-weight: 400;
+     font-style: normal;
+     font-size: 16px;
+     line-height: 21px;
    }
 
+@font-face {
+    font-family: Inter;
+    src: url("Inter/static/Inter-Regular.ttf");
+}
+
 body {
-    margin: 0 auto;
-    width: 1440px;
-    background-color: #EDF2EC;
     box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .main {
-    width: 1440px;
     background: #EDF2EC;
-    margin: 0 auto;
 }
+
 
 .menu {
     background-color: #EDF2EC;
-    height: 134px;
     width: 1440px;
+    margin: 0 auto;
+}
+
+.wrapper_menu {
+    width: 1222px;
+    height: 134px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    margin-left: 111px;
 }
 
 .logo {
     display: flex;
-    flex-grow: 1;
-    margin-left: 132px;
+    justify-content: flex-start;
     font-size: 16px;
+    margin-left: 40px;
+    flex-grow: 1;
+    align-items: flex-start;
 }
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
-    padding-right: 130px;
 }
 
 .nav-item {
     list-style: none;
-    padding:  0px 20px;
+    padding:  0px 46px;
 }
 
 .nav-item a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: Inika;
 }
 
-li:first-child a {
+.nav-item a:hover {
     color: #E06733;
+    font-weight: bold;
   }
 
 .welcome {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
     width: 1440px;
     height: 532px;
     background-color: #EDF2EC;
@@ -67,74 +76,21 @@ li:first-child a {
     box-sizing: border-box;
 }
 
+.welcome-wrapper {
+    width: 1222px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
 .welcome-img {
-    display: block;
-    padding-top: 30px;
+    background-image: url(img/welcomeleact.png);
+    background-repeat: no-repeat;
+    width: 449px;
+    height: 411px;
+    display: inline-block;
 }
 
-.leaf1 {
-    position: relative;
-    background-image: url(img/leaf1.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100% 100%;
-    width: 94px;
-    height: 77px;
-    top: 100px;
-    left: 158px;
-    transform: rotate(355deg);
-}
-
-.leaf2 {
-    position: relative;
-    background-image: url(img/leaf2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    width: 246px;
-    height: 180px;
-    top: -57px;
-    left: -67px;
-}
-
-.leaf3 {
-    position: relative;
-    background-image: url(img/leaf3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    width: 215px;
-    height: 180px;
-    top: -70px;
-    left: -38px;
-    transform: rotate(346deg);
-}
-
-.leaf4 {
-    position: relative;
-    background-image: url(img/leaf4.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100% 100%;
-    width: 100px;
-    height: 85px;
-    top: -254px;
-    left: -104px;
-    transform: rotate(355deg);
-}
-
-.leaf5 {
-    position: relative;
-    background-image: url(img/leaf5.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    width: 114px;
-    height: 94px;
-    top: -321px;
-    left: 168px;
-    transform: rotate(346deg);
-}
 
 .wel-parag {
     width: 549px;
