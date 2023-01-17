@@ -1,0 +1,36 @@
+@media screen {
+    .body {
+        width: 767px
+    }
+
+    .menu {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+
+    .wrapper_menu {
+        width: 668px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .header__logo-line {
+        display: none;
+    }
+
+    .logo {
+        width: 77px;
+        padding: 0;
+    }
+
+    .nav-list {
+        width: 452px;
+    }
+
+    .nav-item {
+        padding:  0px 46px;
+    }
+}

@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 379.98px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 767.98px)" href="tablet.css">
     <link rel="icon" type="image/png" href="img/logo_vector.svg">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <script src="script.js"></script>
     <title>Plants</title>
 </head>
 <body>
 <header class="menu">
-    <wrapper class="wrapper_menu">
+    <wrapper class="wrapper">
+        <div class="header__container">
+        <div class="header__logo-line">
+            <span class="hamburger">
+                <span class="hamburger-line"><span class="hamburger-line__line"></span></span>
+            </span>
+        </div>
     <div class="logo">
-    <p><img src="img/logo_vector.svg" alt="Plants">Plants</p>
+    <p><img src="img/logo1.png" alt="Plants"></p>
     </div>
-<nav>
+<nav class="nav__menu nav">
     <ul class="nav-list">
         <li class="nav-item"><a href="#home">Home</a></li>
         <li class="nav-item"><a href="#about">About us</a></li>
@@ -25,31 +32,36 @@
         <li class="nav-item"><a href="#contacts">Contacts</a></li>
     </ul>
 </nav>
+</div>
 </wrapper>
 </header>
 <main class="main">
 <section class="welcome">
-    <wrapper class="welcome-wrapper">
-    <div class="welcome-img">
-    </div>
+    <wrapper class="wrapper">
+        <div class="welcome__container">
+    <div class="welcome-img"></div>
     <div class="wel-parag">
         <h1 id="home">We grow <span>plants</span> and give you oxygen</h1>
         <p class="wel-paragtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         <button class="buttonPla">LEARN MORE</button>
-    </div>
+    </div></div>
 </wrapper>
 </section>
 <section class="about">
+    <wrapper class="wrapper">
+        <div class="about__container">
     <div class="aboutText">
         <h2 id="about">We are <span>professional experienced</span> gardeners</h2>
         <p class="aboutText-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
         but also the leap into electronic typesetting, remaining essentially unchanged. </p>
     </div>
-    <div class="houseplant1"></div>
+    <div class="houseplant1"></div></div></wrapper>
 </section>
 <section class="service">
+    <wrapper class="wrapper">
+        <div class="service__container">
     <div class="serviceHead">
         <h2 id="service" class="serviceHeadText">Service and our projects</h2>
     <button class="servicebtn">Gardens</button>
@@ -87,6 +99,8 @@
                 <p>Lorem Ipsum has been the industry</p></div>
         </div>
     </div>
+</div>
+</wrapper>
 </section>
 <section class="prices">
     <div class="pricesAbout">
@@ -129,6 +143,7 @@
     </ul>
 </div>
 </footer>
+<script src="script.js"></script>
 </main>
 </body>
 </html>

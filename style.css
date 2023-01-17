@@ -1,3 +1,41 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    /*line-height: 1;
+    font-size: 16px;
+    color: black;*/
+}
+
+._container {
+    max-width: 1222px;
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: Inika;
      src: url("Inika/Inika-Regular.ttf");
@@ -12,39 +50,36 @@
     src: url("Inter/static/Inter-Regular.ttf");
 }
 
-body {
-    box-sizing: border-box;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.main {
+/*body {
     background: #EDF2EC;
-}
-
+    max-width: 1440px;
+    margin: auto;
+}*/
 
 .menu {
     background-color: #EDF2EC;
-    width: 1440px;
-    margin: 0 auto;
 }
 
-.wrapper_menu {
+.wrapper {
     width: 1222px;
-    height: 134px;
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header__container {
     display: flex;
-    justify-content: space-between;
+    min-height: 134px;
     align-items: center;
-    margin-left: 111px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    font-size: 16px;
-    margin-left: 40px;
     flex-grow: 1;
-    align-items: flex-start;
 }
 
 .nav-list {
@@ -53,14 +88,13 @@ body {
 }
 
 .nav-item {
-    list-style: none;
-    padding:  0px 46px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: black;
+    padding:  0px 19px;
+    font-size: 16px;
+    line-height: 50px;
     font-family: Inika;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
 }
 
 .nav-item a:hover {
@@ -69,18 +103,15 @@ body {
   }
 
 .welcome {
-    width: 1440px;
     height: 532px;
     background-color: #EDF2EC;
     padding: 0 109px 0px 109px;
-    box-sizing: border-box;
 }
 
-.welcome-wrapper {
-    width: 1222px;
+.welcome__container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .welcome-img {
@@ -91,11 +122,13 @@ body {
     display: inline-block;
 }
 
-
 .wel-parag {
     width: 549px;
     height: 340px;
     padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 H1 {
@@ -140,17 +173,21 @@ h1 span {
 }
 
 .about {
-    height: 666px;
     background: white;
+}
+
+.about__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 93px 0 94px 0;
 }
 
 .aboutText {
-    padding: 93px 0px 0px 119px;
     width: 605px;
     height: 205px;
+    padding-top: 74px;
 }
 
 h2 {
@@ -169,18 +206,21 @@ h2 span {
     font-size: 20px;
     line-height: 30px;
     color: #636060;
+    padding-top: 40px;
 }
 
 .houseplant1 {
     background: url(img/houseplant1.png) no-repeat;
-    height: 479px;
     width: 464px;
-    margin-top: 93px;
-    margin-right: 109px;
+    height: 479px;
 }
 
 .service {
-    padding: 40px 50px 20px 109px;
+    background-color: #EDF2EC;
+}
+
+.service_container {
+    padding: 40px 0 121px 0;
 }
 
 .serviceHead {
@@ -381,7 +421,6 @@ h2 span {
 }
 
 .contactContainer {
-    width: 1440px;
     height: 500px;
     display: flex;
     justify-content: space-around;
@@ -404,7 +443,6 @@ h2 span {
 }
 
 .footer {
-    width: 1440px;
     height: 130px;
     background-color: white;
     display: flex;
