@@ -1,36 +1,72 @@
 @media screen {
-    .body {
-        width: 767px
-    }
-
-    .menu {
-        max-width: 767px;
-        margin: 0 auto;
-    }
-
-    .wrapper_menu {
+    .wrapper {
         width: 668px;
+        margin: auto;
+    }
+
+    .header__container {
+        min-height: 117px;
+    }
+
+    .welcome__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 40px 0 70px 0;
+    }
+
+    .wel-parag {
+        width: 346px;
+        height: 310px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding-left: 0;
-    }
-
-    .header__logo-line {
-        display: none;
-    }
-
-    .logo {
-        width: 77px;
         padding: 0;
     }
 
-    .nav-list {
-        width: 452px;
+    .welcome-img {
+        width: 280px;
+        height: 255px;
+        background-size: contain;
     }
 
-    .nav-item {
-        padding:  0px 46px;
+    h1, h1 span {
+        font-size: 35px;
     }
+
+    .wel-paragtext {
+        font-size: 16px;
+    }
+
+    .about__container {
+        padding: 40px 0 95px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutText {
+        padding: 40px 0 0 0;
+        text-align: center;
+        width: 432px;
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .aboutText-2 {
+        width: 665px;
+        height: 208px;
+        text-align: left;
+        margin-left: -100px;
+    }
+
+    .houseplant1 {
+        width: 250px;
+        height: 258px;
+        background-size: contain;
+        padding: 40px 0 0 0;
+    }
+
 }

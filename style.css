@@ -50,12 +50,6 @@ body {
     src: url("Inter/static/Inter-Regular.ttf");
 }
 
-/*body {
-    background: #EDF2EC;
-    max-width: 1440px;
-    margin: auto;
-}*/
-
 .menu {
     background-color: #EDF2EC;
 }
@@ -103,9 +97,7 @@ body {
   }
 
 .welcome {
-    height: 532px;
     background-color: #EDF2EC;
-    padding: 0 109px 0px 109px;
 }
 
 .welcome__container {
@@ -150,7 +142,7 @@ h1 span {
 .wel-paragtext {
     font-family: Inter;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #636060;
@@ -219,8 +211,9 @@ h2 span {
     background-color: #EDF2EC;
 }
 
-.service_container {
-    padding: 40px 0 121px 0;
+.service__container {
+    padding: 50px 0 121px 0;
+    flex-wrap: wrap;
 }
 
 .serviceHead {
@@ -319,14 +312,14 @@ h2 span {
 
 .prices {
     background: white;
+}
+
+.prices__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
-    padding: 50px 50px 20px 109px;
-    height: 550px;
+    padding: 60px 0 95px 0;
 }
-
 .pricesAbout {
     width: 200px;
 }
@@ -412,6 +405,11 @@ h2 span {
     height: 175px;
 }
 
+.contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .contacts h2 {
     margin: 0 auto;
     padding-top: 30px;
@@ -421,13 +419,10 @@ h2 span {
 }
 
 .contactContainer {
-    height: 500px;
+    width: 1222px;
     display: flex;
-    justify-content: space-around;
-}
-
-.contact_woman {
-    padding-left: 109px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contactsbutton {
@@ -442,13 +437,24 @@ h2 span {
     margin: 148px 109px 0px 0px;
 }
 
+.btn__text {
+    padding-left: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 40px;
+}
+
 .footer {
-    height: 130px;
     background-color: white;
+}
+
+.footer__container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0 40px 0;
 }
 
 .footerdata {
