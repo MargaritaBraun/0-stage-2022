@@ -182,12 +182,13 @@ h1 span {
     padding-top: 74px;
 }
 
-h2 {
+.about__title {
+    font-family: Inika;
     font-weight: 400;
     color: #499A18;
     font-size: 40px;
     line-height: 52px;
-    width: 400px;
+    width: 450px;
 }
 
 h2 span {
@@ -224,11 +225,18 @@ h2 span {
 }
 
 .serviceHeadText {
-    width: 306px;
-    height: 94px;
+    font-family: Inika;
     font-weight: 400;
     font-size: 40px;
     line-height: 52.12px;
+    color: #499A18;
+}
+
+.serviceHeadText2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52.12px;
+    color: #499A18;
 }
 
 .servicebtn {
@@ -238,6 +246,9 @@ h2 span {
     height: 50px;
     color: #E06733;
     cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Inika;
 }
 
 .servicebtn:hover {
@@ -260,6 +271,7 @@ h2 span {
     background: url(img/service1.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryText {
@@ -271,6 +283,7 @@ h2 span {
     text-align: center;
     padding: 10px 0px 0px 0px;
     color: #717171;
+    font-weight: 400;
 }
 
 .galleryTextBolt {
@@ -280,34 +293,43 @@ h2 span {
     font-weight: bold;
 }
 
+.galleryTextBolt__normal {
+    padding: 10px 0 20px 0;
+}
+
 .galleryFoto2 {
     background: url(img/service2.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto3 {
     background: url(img/service3.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto4 {
     background: url(img/service4.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto5 {
     background: url(img/service5.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto6 {
     background: url(img/service6.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .prices {
@@ -324,11 +346,12 @@ h2 span {
     width: 200px;
 }
 
-.pricesAbout h2 {
+.prices__title {
     color: black;
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
+    line-height: 48,41px;
 }
 
 .pricesMenu {
@@ -352,7 +375,8 @@ h2 span {
     border: 0;
     font-family: Inter;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 20px;
     padding: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
@@ -382,15 +406,16 @@ h2 span {
 }
 
 .pricesbtn {
-    margin-top: -10;
     border: 1px solid orange;
     border-radius: 5px;
-    width: 161px;
+    width: 162px;
     height: 50px;
     color: #E06733;
     background-color: white;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .pricesbtn:hover {
@@ -405,17 +430,24 @@ h2 span {
     height: 175px;
 }
 
+.contacts {
+    background-color: #EDF2EC;
+}
+
 .contacts__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.contacts h2 {
+
+.contacts__title {
     margin: 0 auto;
     padding-top: 30px;
+    font-family: Inika;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    color: #499A18;
 }
 
 .contactContainer {
@@ -423,6 +455,11 @@ h2 span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.contact_woman {
+    height: 497px;
+    width: 400px;
 }
 
 .contactsbutton {
@@ -434,7 +471,10 @@ h2 span {
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0px;
-    margin: 148px 109px 0px 0px;
+}
+
+.contactsbutton__cont {
+    padding: 148px 109px 0px 0px;
 }
 
 .btn__text {
