@@ -1,3 +1,41 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    /*line-height: 1;
+    font-size: 16px;
+    color: black;*/
+}
+
+._container {
+    max-width: 1222px;
+    margin: 0 auto;
+}
+
 @font-face {
     font-family: Inika;
      src: url("Inika/Inika-Regular.ttf");
@@ -12,39 +50,30 @@
     src: url("Inter/static/Inter-Regular.ttf");
 }
 
-body {
-    box-sizing: border-box;
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.main {
-    background: #EDF2EC;
-}
-
-
 .menu {
     background-color: #EDF2EC;
-    width: 1440px;
-    margin: 0 auto;
 }
 
-.wrapper_menu {
+.wrapper {
     width: 1222px;
-    height: 134px;
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.header__container {
     display: flex;
-    justify-content: space-between;
+    min-height: 134px;
     align-items: center;
-    margin-left: 111px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    font-size: 16px;
-    margin-left: 40px;
     flex-grow: 1;
-    align-items: flex-start;
 }
 
 .nav-list {
@@ -53,14 +82,13 @@ body {
 }
 
 .nav-item {
-    list-style: none;
-    padding:  0px 46px;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: black;
+    padding:  0px 19px;
+    font-size: 16px;
+    line-height: 50px;
     font-family: Inika;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
 }
 
 .nav-item a:hover {
@@ -69,18 +97,13 @@ body {
   }
 
 .welcome {
-    width: 1440px;
-    height: 532px;
     background-color: #EDF2EC;
-    padding: 0 109px 0px 109px;
-    box-sizing: border-box;
 }
 
-.welcome-wrapper {
-    width: 1222px;
+.welcome__container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .welcome-img {
@@ -91,11 +114,13 @@ body {
     display: inline-block;
 }
 
-
 .wel-parag {
     width: 549px;
     height: 340px;
     padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 H1 {
@@ -117,7 +142,7 @@ h1 span {
 .wel-paragtext {
     font-family: Inter;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 35px;
     color: #636060;
@@ -140,25 +165,30 @@ h1 span {
 }
 
 .about {
-    height: 666px;
     background: white;
+}
+
+.about__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 93px 0 94px 0;
 }
 
 .aboutText {
-    padding: 93px 0px 0px 119px;
     width: 605px;
     height: 205px;
+    padding-top: 74px;
 }
 
-h2 {
+.about__title {
+    font-family: Inika;
     font-weight: 400;
     color: #499A18;
     font-size: 40px;
     line-height: 52px;
-    width: 400px;
+    width: 450px;
 }
 
 h2 span {
@@ -169,18 +199,22 @@ h2 span {
     font-size: 20px;
     line-height: 30px;
     color: #636060;
+    padding-top: 40px;
 }
 
 .houseplant1 {
     background: url(img/houseplant1.png) no-repeat;
-    height: 479px;
     width: 464px;
-    margin-top: 93px;
-    margin-right: 109px;
+    height: 479px;
 }
 
 .service {
-    padding: 40px 50px 20px 109px;
+    background-color: #EDF2EC;
+}
+
+.service__container {
+    padding: 50px 0 121px 0;
+    flex-wrap: wrap;
 }
 
 .serviceHead {
@@ -191,11 +225,18 @@ h2 span {
 }
 
 .serviceHeadText {
-    width: 306px;
-    height: 94px;
+    font-family: Inika;
     font-weight: 400;
     font-size: 40px;
     line-height: 52.12px;
+    color: #499A18;
+}
+
+.serviceHeadText2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52.12px;
+    color: #499A18;
 }
 
 .servicebtn {
@@ -205,6 +246,9 @@ h2 span {
     height: 50px;
     color: #E06733;
     cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: Inika;
 }
 
 .servicebtn:hover {
@@ -227,6 +271,7 @@ h2 span {
     background: url(img/service1.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryText {
@@ -238,6 +283,7 @@ h2 span {
     text-align: center;
     padding: 10px 0px 0px 0px;
     color: #717171;
+    font-weight: 400;
 }
 
 .galleryTextBolt {
@@ -247,55 +293,65 @@ h2 span {
     font-weight: bold;
 }
 
+.galleryTextBolt__normal {
+    padding: 10px 0 20px 0;
+}
+
 .galleryFoto2 {
     background: url(img/service2.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto3 {
     background: url(img/service3.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto4 {
     background: url(img/service4.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto5 {
     background: url(img/service5.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .galleryFoto6 {
     background: url(img/service6.png)no-repeat;
     width: 329px;
     height: 350px;
+    border-radius: 20px 20px 0 0;
 }
 
 .prices {
     background: white;
+}
+
+.prices__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
-    padding: 50px 50px 20px 109px;
-    height: 550px;
+    padding: 60px 0 95px 0;
 }
-
 .pricesAbout {
     width: 200px;
 }
 
-.pricesAbout h2 {
+.prices__title {
     color: black;
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
+    line-height: 48,41px;
 }
 
 .pricesMenu {
@@ -319,7 +375,8 @@ h2 span {
     border: 0;
     font-family: Inter;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 20px;
     padding: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
@@ -349,15 +406,16 @@ h2 span {
 }
 
 .pricesbtn {
-    margin-top: -10;
     border: 1px solid orange;
     border-radius: 5px;
-    width: 161px;
+    width: 162px;
     height: 50px;
     color: #E06733;
     background-color: white;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .pricesbtn:hover {
@@ -372,23 +430,36 @@ h2 span {
     height: 175px;
 }
 
-.contacts h2 {
+.contacts {
+    background-color: #EDF2EC;
+}
+
+.contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacts__title {
     margin: 0 auto;
     padding-top: 30px;
+    font-family: Inika;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
+    color: #499A18;
 }
 
 .contactContainer {
-    width: 1440px;
-    height: 500px;
+    width: 1222px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact_woman {
-    padding-left: 109px;
+    height: 497px;
+    width: 400px;
 }
 
 .contactsbutton {
@@ -400,17 +471,30 @@ h2 span {
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 0px;
-    margin: 148px 109px 0px 0px;
+}
+
+.contactsbutton__cont {
+    padding: 148px 109px 0px 0px;
+}
+
+.btn__text {
+    padding-left: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 40px;
 }
 
 .footer {
-    width: 1440px;
-    height: 130px;
     background-color: white;
+}
+
+.footer__container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 0 40px 0;
 }
 
 .footerdata {

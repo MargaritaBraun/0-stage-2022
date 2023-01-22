@@ -1,0 +1,219 @@
+@media screen {
+    .wrapper {
+        width: 668px;
+        margin: auto;
+    }
+
+    .header__container {
+        min-height: 117px;
+    }
+
+    .welcome__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 40px 0 70px 0;
+    }
+
+    .wel-parag {
+        width: 346px;
+        height: 310px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .welcome-img {
+        width: 280px;
+        height: 255px;
+        background-size: contain;
+    }
+
+    h1, h1 span {
+        font-size: 35px;
+    }
+
+    .wel-paragtext {
+        font-size: 16px;
+    }
+
+    .about__container {
+        padding: 40px 0 95px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutText {
+        padding: 40px 0 0 0;
+        text-align: center;
+        width: 432px;
+        height: 350px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .aboutText-2 {
+        width: 665px;
+        height: 208px;
+        text-align: left;
+        margin-left: -100px;
+    }
+
+    .houseplant1 {
+        width: 250px;
+        height: 258px;
+        background-size: contain;
+        padding: 40px 0 0 0;
+    }
+
+    .service__container {
+        padding: 60px 0 70px 0;
+        flex-wrap: wrap;
+    }
+
+    .serviceHead {
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        flex-wrap: wrap;
+    }
+
+    .serviceHeadText {
+        font-size: 35px;
+        line-height: 45.61px;
+        width: 100%;
+    }
+
+    .serviceHeadText2 {
+        font-size: 35px;
+        line-height: 45.61px;
+        width: 100%;
+        padding: 0 0 40px 0;
+    }
+
+    .servicebtn {
+        font-family: Inika-Regular;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .galleryFoto1 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .galleryText {
+        width: 280px;
+        height: 100px;
+        padding: 10px 0 20px 0;
+    }
+
+    .galleryFoto2 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .galleryFoto3 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .galleryFoto4 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .galleryFoto5 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .galleryFoto6 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .gallery {
+        display: flex;
+        width: 668px;
+        height: 1600px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .galleryTextBolt {
+        padding: 10px 0 0 0;
+    }
+
+    .prices__title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42.36px;
+    }
+
+    .pricesBlock {
+        width: 296px;
+        height: 496.98px;
+    }
+
+    .pricesMenu {
+        width: 332px;
+        height: 282px;
+    }
+
+    .pricesButton {
+        width: 250px;
+    }
+
+    .pricesBlockText {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 139px 0 0 40px;
+        width: 296px;
+    }
+
+    .pricesBlockleaves {
+        height: 174.98px;
+    }
+
+    .contacts__container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 730px;
+    }
+
+    .contactContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contactsbutton__cont {
+        padding: 100px 109px 250px 109px;
+    }
+
+    .woman {
+        width: 200px;
+        height: 248.49px;
+        object-fit: contain;
+    }
+
+    .contact_woman {
+        text-align: center;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0 18px 0;
+    }
+
+    .footerdata {
+        width: 210px;
+        line-height: 24.2px;
+    }
+
+}
