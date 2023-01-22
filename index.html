@@ -5,17 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 379.98px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 768.98px)" href="tablet.css">
     <link rel="icon" type="image/png" href="img/logo_vector.svg">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <script src="script.js"></script>
     <title>Plants</title>
 </head>
 <body>
 <header class="menu">
+    <wrapper class="wrapper">
+        <div class="header__container">
+        <div class="header__logo-line">
+            <span class="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </span>
+        </div>
     <div class="logo">
-    <p><img src="img/logo_vector.svg" alt="Plants">Plants</p>
+    <p><img src="img/logo1.png" alt="Plants"></p>
     </div>
-<nav>
+<nav class="nav__menu nav">
     <ul class="nav-list">
         <li class="nav-item"><a href="#home">Home</a></li>
         <li class="nav-item"><a href="#about">About us</a></li>
@@ -24,35 +35,38 @@
         <li class="nav-item"><a href="#contacts">Contacts</a></li>
     </ul>
 </nav>
+</div>
+</wrapper>
 </header>
 <main class="main">
 <section class="welcome">
-    <div class="welcome-img">
-    <div class="leaf1"></div>
-    <div class="leaf2"></div>
-    <div class="leaf3"></div>
-    <div class="leaf4"></div>
-    <div class="leaf5"></div>
-    </div>
+    <wrapper class="wrapper">
+        <div class="welcome__container">
+    <div class="welcome-img"></div>
     <div class="wel-parag">
         <h1 id="home">We grow <span>plants</span> and give you oxygen</h1>
         <p class="wel-paragtext">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
         <button class="buttonPla">LEARN MORE</button>
-    </div>
+    </div></div>
+</wrapper>
 </section>
 <section class="about">
+    <wrapper class="wrapper">
+        <div class="about__container">
     <div class="aboutText">
-        <h2 id="about">We are <span>professional experienced</span> gardeners</h2>
+        <h2 id="about" class="about__title">We are <span>professional experienced</span> gardeners</h2>
         <p class="aboutText-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
         but also the leap into electronic typesetting, remaining essentially unchanged. </p>
     </div>
-    <div class="houseplant1"></div>
+    <div class="houseplant1"></div></div></wrapper>
 </section>
 <section class="service">
+    <wrapper class="wrapper">
+        <div class="service__container">
     <div class="serviceHead">
-        <h2 id="service" class="serviceHeadText">Service and our projects</h2>
+        <h2 id="service" class="serviceHeadText">Service and our <p class="serviceHeadText2">projects</p></h2>
     <button class="servicebtn">Gardens</button>
     <button class="servicebtn">Law</button>
     <button class="servicebtn">Planting</button></div>
@@ -60,38 +74,42 @@
         <div class="galleryFoto1">
             <div class="galleryText">
                 <p class="galleryTextBolt">Planting</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
         <div class="galleryFoto2">
             <div class="galleryText">
                 <p class="galleryTextBolt">Planting</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
         <div class="galleryFoto3">
             <div class="galleryText">
                 <p class="galleryTextBolt">Lawn care</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
         <div class="galleryFoto4">
             <div class="galleryText">
                 <p class="galleryTextBolt">Planting</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
         <div class="galleryFoto5">
             <div class="galleryText">
                 <p class="galleryTextBolt">Garden care</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
         <div class="galleryFoto6">
             <div class="galleryText">
                 <p class="galleryTextBolt">Planting</p>
-                <p>Lorem Ipsum has been the industry</p></div>
+                <p class="galleryTextBolt__normal">Lorem Ipsum has been the industry</p></div>
         </div>
     </div>
+</div>
+</wrapper>
 </section>
 <section class="prices">
+    <wrapper class="wrapper">
+        <div class="prices__container">
     <div class="pricesAbout">
-        <h2 id="prices">Prices</h2>
+        <h2 id="prices" class="prices__title">Prices</h2>
         <div class="pricesMenu">
         <button class="pricesButton"><img src="img/accordion_btn.svg" alt="Basics">Basics</button>
         <button class="pricesButton"><img src="img/accordion_btn.svg" alt="Standard">Standard</button>
@@ -104,17 +122,21 @@
         <div class="pricesBlockleaves">
             <div class="pricesBlockleaves"><img src="img/leafs.png" alt="leafs"></div>
         </div>
-    </div>
+    </div></div></wrapper>
 </section>
 <section class="contacts">
-    <h2 id="contacts">Contact us</h2>
+    <wrapper class="wrapper">
+        <div class="contacts__container">
+    <h2 id="contacts" class="contacts__title">Contact us</h2>
     <div class="contactContainer">
-        <div class="contact_woman">
-        <img src="img/contact_woman.png" alt="woman"></div>
-        <button class="contactsbutton"><span>City</span><img src="img/accordion_btn.svg" alt="accordion_btn"></button>
-    </div>
+        <div class="contact_woman"><img src="img/contactwoman.png" alt="woman" class="woman"></div>
+        <div class="contactsbutton__cont">
+        <button class="contactsbutton"><span class="btn__text">City</span><img src="img/accordion_btn.svg" alt="accordion_btn"></button></div>
+    </div></div></wrapper>
 </section>
 <footer class="footer">
+    <wrapper class="wrapper">
+        <div class="footer__container">
 <div class="footerdata">
     <p>©</p>
     <p>2022</p>
@@ -128,8 +150,9 @@
         <li class="item-li"><img src="img/tv.svg" alt="tv"></li>
         <li class="item-li"><img src="img/pinterest.svg" alt="pinterest"></li>
     </ul>
-</div>
+</div></div></wrapper>
 </footer>
+<script src="script.js"></script>
 </main>
 </body>
 </html>
