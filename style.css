@@ -351,7 +351,7 @@ h2 span {
     font-family: Inter;
     font-weight: 700;
     font-size: 40px;
-    line-height: 48,41px;
+    line-height: 48.41px;
 }
 
 .pricesMenu {
@@ -482,6 +482,8 @@ h2 span {
     font-family: Inter;
     font-size: 20px;
     line-height: 40px;
+    font-weight: 400;
+    color: #717171;
 }
 
 .footer {
