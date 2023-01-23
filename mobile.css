@@ -4,6 +4,16 @@
         margin: auto;
     }
 
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    h1 span {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
     .header__container {
         display: flex;
         flex-direction: row-reverse;
@@ -84,57 +94,151 @@
         flex-direction: column;
         align-items: center;
     }
-    /*
-    .hamburger-line {
-        content: "";
-        display: inline-block;
-        position: relative;
-        left: 0;
-        top: 0;
-        border: 2px solid #717171;
-        
-    }
-    
-    .hamburger-line::before {
-        content: "";
-        display: inline-block;
-        position: relative;
-        left: 0;
-        top: 3.5px;
-        border: 2px solid #717171;
-        height: 0px;
-        width: 40px;
-    }
-    
-    .hamburger-line::after {
-        content: "";
-        display: inline-block;
-        position: relative;
-        left: 0;
-        bottom: 0;
-        border: 2px solid #717171;
-        height: 0px;
-        width: 40px;
-    }
-    
-    .hamburger-line__line {
-        content: "";
-        display: inline-block;
-        position: relative;
-        left: 0;
-        top: 3px;
-        border: 2px solid #717171;
-        height: 0px;
-        width: 40px;
-    }
-   
 
-    .header__container {
+    .welcome-img {
+        display: none;
+    }
+
+    .welcome__container {
+        padding: 0 0 0 0;
+        max-height: 516px;
+    }
+
+    .wel-parag {
+        width: 330px;
+        height: 300px;
+        padding: 24px 0 24px 0;
+    }
+
+    .wel-paragtext {
+        font-size: 16px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .buttonPla {
+        width: 100px;
+        height: 34.14px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    .about__container {
+        padding: 30px 0 31.33px 0;
+        justify-content: center;
+    }
+
+    .about__title {
+        font-size: 25px;
+        line-height: 32.57px;
+        width: 288px;
+        text-align: center;
+    }
+
+    .aboutText-2 {
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 21.55px;
+    }
+
+    .houseplant1 {
+        width: 150px;
+        height: 147px;
+        background-size: contain;
+    }
+
+    .aboutText {
+        width: 330px;
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .serviceHeadText {
+        font-size: 25px;
+        line-height: 32.57px;
+        width: 187px;
+    }
+
+    .serviceHeadText2 {
+        font-size: 25px;
+        line-height: 32.57px;
+        padding-bottom: 35px;
+    }
+
+    .serviceHead {
         display: flex;
-        flex-direction: row-reverse;
-        padding: 32px 0 0 0;
-    }*/
-    
-    
+        padding: 0 0 0 0;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+
+    .servicebtn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 19.54px;
+    }
+
+    .servicebtn:last-child {
+        margin-top: 9px ;
+    }
+
+    .gallery {
+        justify-content: center;
+        width: 280px;
+        height: 2870px;
+        margin: auto;
+        align-items: flex-start;
+        padding: 40px 0 27px 0;
+        align-content: space-between;
+    }
+
+    .galleryFoto1 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .galleryFoto2 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .galleryFoto3 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .galleryFoto4 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .galleryFoto5 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+    .galleryFoto6 {
+        width: 279px;
+        height: 350px;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .galleryText {
+        width: 279px;
+        height: 100px;
+        padding: 10px 0 20px 0;
+    }
+
+    .galleryTextBolt {
+        line-height: 20px;
+    }
+
+    .galleryTextBolt__normal {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
 
 }
