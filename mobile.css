@@ -240,5 +240,123 @@
         line-height: 20px;
     }
 
+    .prices__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 25px 0 40px 0;
+    }
+
+    .pricesAbout {
+        width: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prices__title {
+        font-size: 25px;
+        line-height: 30.26px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .pricesMenu {
+        margin: 0;
+        width: 224px;
+        height: 235px;
+    }
+
+    .pricesButton {
+        width: 180px;
+        height: 49.72px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .pricesBlockText {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        padding: 19px 0 14px 0;
+        width: 230px;
+    }
+
+    .pricesbtn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 19.54px;
+    }
+
+    .pricesBlock {
+        display: flex;
+        align-items: center;
+        height: 140px;
+    }
+
+    .pricesBlockleaves {
+        display: none;
+    }
+
+    .contact_woman, .woman {
+        width: 100px;
+        height: 124.25px;
+        object-fit: contain;
+    }
+
+    .contact_woman {
+        padding: 132px 0 0 0;
+    }
+
+    .contacts__title {
+        font-size: 25px;
+        line-height: 32.57px;
+        padding: 30px 0 0 0;
+    }
+
+    .contactsbutton__cont {
+        padding: 0 0 0 0;
+    }
+
+    .contactContainer {
+        height: 485px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 80px 0 0 0;
+    }
+
+    .contactsbutton {
+        width: 300px;
+        justify-content: space-between;
+        padding: 0 17px 0 20px;
+    }
+
+    .btn__text {
+        font-size: 20px;
+        line-height: 40px;
+        padding-left: 0;
+    }
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        padding: 22px 0 0 0;
+    }
+
+    .footerdata {
+        width: 210px;
+        line-height: 24.2px;
+    }
+
+    .gitMy, .rs {
+        line-height: 24.2px;
+        font-size: 20px;
+    }
 
 }

@@ -216,4 +216,9 @@
         line-height: 24.2px;
     }
 
+    .gitMy, .rs {
+        line-height: 24.2px;
+        font-size: 20px;
+    }
+
 }
