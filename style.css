@@ -382,6 +382,104 @@ h2 span {
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
+    cursor: pointer;
+    -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pricesButton + .panel {
+    display: none;
+}
+
+.pricesButton.active + .panel {
+    display: block;
+}
+
+.pricesButton.active {
+    background-color: #D6E7D2;
+}
+
+.pricesButton.active img{
+    transform: rotate(180deg);
+}
+
+.wrapperButton {
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.panel {
+    background-color: #D6E7D2;
+    width: 199px;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    border: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: -13px;
+}
+
+.panel__title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+}
+
+.panel__img {
+position: relative;
+top: -15px;
+left: 170px;
+width: 16px;
+height: 16px;
+}
+
+.line {
+    border: none;
+	border-top: 0.5px solid #AEA1A1;
+    width: 164px;
+}
+
+.description {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #717171;
+}
+
+.cost {
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: lighter;
+    line-height: 20px;
+    color: #000000;
+}
+
+.cost span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #E06733;
+}
+
+.panel__btn {
+    background-color: white;
+    width: 86px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #717171;
 }
 
 .pricesBlock {
