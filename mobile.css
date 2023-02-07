@@ -25,42 +25,70 @@
         width: 40px;
         height: 24px;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
         overflow: hidden;
+        cursor: pointer;
+        z-index: 2;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
     }
 
-    .hamburger-line {
-        width: 40px;
-        height: 0px;
+    .hamburger span {
+        display: block;
         position: absolute;
+        width: 100%;
+        height: 2px;
+        background:#717171;
         top: 0;
         left: 0;
-        border: 2px solid #717171;
+        border-radius: 2px;
+        opacity: 1;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
     }
 
-    .hamburger-line:nth-child(2) {
+    .hamburger span:nth-child(1) {
+        top: 0px;
+    }
+
+    .hamburger span:nth-child(2) {
         top: calc(50% - 6px);
     }
 
-    .hamburger-line:nth-child(3) {
+    .hamburger span:nth-child(3) {
         top: calc(50% - -1px);
     }
 
-    .hamburger-line:nth-child(4) {
+    .hamburger span:nth-child(4) {
         top: calc(50% - -8px);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 0px;
+        display: none;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        top: calc(50% - 5px);
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: calc(50% - -0.5px);
+        transform: rotate(-45deg);
+    }
+
+    .hamburger.active span:nth-child(4) {
+        display: none;
     }
 
     .nav__menu {
         position: absolute;
         top: 0;
 	    left: 0;
-	    width: 100%;
-	    height: 100%;
 	    padding: 15px;
 	    transform: translateX(-100%);
-	    transition: transform 0.5s;
+	    transition: all .5s;
+        background-color: rgb(218, 198, 149, 0.785);
     }
 
     .nav__menu.active {
@@ -71,29 +99,21 @@
         list-style-type: none;
     }
 
-    .hamburger:active .hamburger-line:nth-child(4) {
-        display: none;
-    }
-
-    .hamburger:active .hamburger-line:nth-child(3) {
-        display: none;
-    }
-
-    .hamburger:active .hamburger-line:nth-child(1) {
-        top: 50%;
-        transform: rotate(45deg);
-    }
-
-    .hamburger:active .hamburger-line:nth-child(2) {
-        top: 50%;
-        transform: rotate(-45deg);
-    }
-
     .nav-list {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 330px;
+	    height: 240px;
     }
+
+    .nav__menu::after {
+        position: absolute;
+    }
+
+    body.noscroll {
+        overflow: hidden;
+      }
 
     .welcome-img {
         display: none;
